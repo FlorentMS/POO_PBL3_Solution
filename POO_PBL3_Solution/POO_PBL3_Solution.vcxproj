@@ -139,7 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CLparcours.cpp" />
+    <ClCompile Include="CLparcours2D.cpp" />
+    <ClCompile Include="CLparcours3D.cpp" />
+    <ClCompile Include="CLpoint.cpp" />
+    <ClCompile Include="CLpoint3D.cpp" />
     <ClCompile Include="POO_PBL3_Solution.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CLparcours.h" />
+    <ClInclude Include="CLparcours2D.h" />
+    <ClInclude Include="CLparcours3D.h" />
+    <ClInclude Include="CLpoint.h" />
+    <ClInclude Include="CLpoint3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

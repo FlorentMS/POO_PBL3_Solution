@@ -1,20 +1,53 @@
 // POO_PBL3_Solution.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
 //
-
 #include <iostream>
+#include "CLpoint.h"
+#include "CLpoint3D.h"
+#include "CLparcours.h"
+#include "CLparcours2D.h"
+#include "CLparcours3D.h"
 
-int main()
-{
-    std::cout << "Hello World!\n";
+using namespace std;
+
+void main(void) {
+	int pause;
+
+	CLpoint* p1;
+	CLpoint* p2;
+	CLpoint* p3;
+	/*CLParcours* parcours;*/
+
+	p1 = new CLpoint(0.0, 0.0);
+	p2 = new CLpoint(1.0, 1.0);
+	p3 = new CLpoint(2.0, 2.0);
+	p1->afficherCoordo();
+	std::cout << p2->getX() << std::endl;
+	std::cout << p3->getY() << std::endl;
+	/*parcours = new CLparcours2D(3);
+
+	parcours->ajouterPoint(p1);
+	parcours->ajouterPoint(p2);
+	parcours->ajouterPoint(p3);
+
+	cout << parcours->calculDistance() << endl;
+	parcours->message();*/
+	/*
+	p1 = new CLpoint3D(0.0, 0.0, 0.0);
+	p2 = new CLpoint3D(1.0, 1.0, 1.0);
+	p3 = new CLpoint3D(2.0, 2.0, 2.0);
+	parcours = new CLparcours3D(3);
+
+	parcours->ajouterPoint(p1);
+	parcours->ajouterPoint(p2);
+	parcours->ajouterPoint(p3);
+	
+	cout << parcours->calculDistance() << endl;
+	parcours->message();
+
+	p1 = new CLpoint(0.0, 0.0);
+	p2 = new CLpoint3D(1.0, 1.0, 1.0);
+
+	(p1 = p2)->afficherCoordo();
+	*/
+	cin.get() /* >> pause*/;
 }
-
-// Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
-// Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
-
-// Astuces pour bien démarrer : 
-//   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
-//   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
-//   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
-//   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
-//   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
-//   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.
