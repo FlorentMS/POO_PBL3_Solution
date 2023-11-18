@@ -12,18 +12,18 @@ CLpoint::CLpoint(float x, float y) :
 
 float CLpoint::getX(void)
 {
-	return x;
+	return this->x;
 }
 
 float CLpoint::getY(void)
 {
-	return y;
+	return this->y;
 }
 
 void CLpoint::afficherCoordo()
 {
-	std::cout << "Les coordonnées du point : " << this
-		<< ", d'ID : "
+	std::cout << "Les coordonnees du point : " << this
+		<< ", d'ID : " << NULL
 		<< " et de type : 2D, sont (" << x << ":" << y << ")"
 		<< std::endl;
 }

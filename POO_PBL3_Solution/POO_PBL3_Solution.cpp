@@ -15,22 +15,19 @@ void main(void) {
 	CLpoint* p1;
 	CLpoint* p2;
 	CLpoint* p3;
-	/*CLParcours* parcours;*/
+	CLparcours* parcours;
 
 	p1 = new CLpoint(0.0, 0.0);
 	p2 = new CLpoint(1.0, 1.0);
 	p3 = new CLpoint(2.0, 2.0);
-	p1->afficherCoordo();
-	std::cout << p2->getX() << std::endl;
-	std::cout << p3->getY() << std::endl;
-	/*parcours = new CLparcours2D(3);
-
+	parcours = new CLparcours2D(3);
+	
 	parcours->ajouterPoint(p1);
 	parcours->ajouterPoint(p2);
 	parcours->ajouterPoint(p3);
 
 	cout << parcours->calculDistance() << endl;
-	parcours->message();*/
+	parcours->message();
 	/*
 	p1 = new CLpoint3D(0.0, 0.0, 0.0);
 	p2 = new CLpoint3D(1.0, 1.0, 1.0);
@@ -49,5 +46,5 @@ void main(void) {
 
 	(p1 = p2)->afficherCoordo();
 	*/
-	cin.get() /* >> pause*/;
+	cin/*.get()*/  >> pause;
 }
