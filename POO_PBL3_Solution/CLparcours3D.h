@@ -7,6 +7,7 @@
 class CLparcours3D :
     public CLparcours
 {
+
 };
 
 #endif // !Classeparcours3D
