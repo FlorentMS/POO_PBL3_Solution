@@ -1,6 +1,6 @@
 // POO_PBL3_Solution.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
 //
-#define affichage
+//#define affichage
 
 #include <iostream>
 #include "CLpoint.h"
@@ -38,8 +38,6 @@ void main(void) {
 
 	cout << parcours->calculDistance() << endl;
 	parcours->message();
-
-	//delete p1;		delete p2;		delete p3;
 	
 	p1 = new CLpoint3D(0.0, 0.0, 0.0);
 	p2 = new CLpoint3D(1.0, 1.0, 1.0);
@@ -59,14 +57,11 @@ void main(void) {
 	cout << parcours->calculDistance() << endl;
 	parcours->message();
 
-	//delete p1;		delete p2;		delete p3;
-
 	p1 = new CLpoint(0.0, 0.0);
 	p2 = new CLpoint3D(1.0, 1.0, 1.0);
 
 	(p1 = p2)->afficherCoordo();
 
-	//delete p1;		delete p2;
 	
-	cin/*.get()*/  >> pause;
+	cin.get()  /*>> pause*/;
 }

@@ -1,5 +1,5 @@
 #pragma once
-#define affichage
+//#define affichage
 
 #include "CLpoint.h"
 #include "CLpoint3D.h"
@@ -10,13 +10,12 @@
 class CLparcours
 {
 protected :
-	float distance;
+	CLpoint** tab;
 
 public :
 	virtual float calculDistance(void) = 0;
 	virtual void message(void);
-	virtual void ajouterPoint(CLpoint*);
-	virtual void ajouterPoint(CLpoint3D*);
+	void ajouterPoint(CLpoint*);
 };
 
 #endif // 

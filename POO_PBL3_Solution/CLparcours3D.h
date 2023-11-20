@@ -9,10 +9,6 @@
 class CLparcours3D :
     public CLparcours
 {
-private:
-    CLpoint** tab;
-    void ajouterPoint(CLpoint* pPoint);
-    
 public:
     CLparcours3D();
     CLparcours3D(int nbPoint);
@@ -20,7 +16,8 @@ public:
 
     float calculDistance(void);
     void message(void);
-    void ajouterPoint(CLpoint3D* pPoint) /*override*/;
+    using CLparcours::ajouterPoint;
+    //void ajouterPoint(CLpoint* pPoint);
 };
 
 #endif // !Classeparcours3D

@@ -1,6 +1,6 @@
-#define affichage
 #include <iostream>
 #include "CLparcours.h"
+
 
 void CLparcours::message(void)
 {
@@ -9,8 +9,16 @@ void CLparcours::message(void)
 
 void CLparcours::ajouterPoint(CLpoint* pPoint)
 {
-}
+#ifdef affichage
+	std::cout << "ajouterPoint(CLpoint* pPoint)" << std::endl;
+#endif
 
-void CLparcours::ajouterPoint(CLpoint3D*)
-{
+	int i = 0;
+	while (*(tab + (i)) != NULL) {
+		i++;
+	}
+	*(tab + (i)) = pPoint;
+#ifdef affichage
+	(*(tab + (i)))->afficherCoordo();
+#endif
 }

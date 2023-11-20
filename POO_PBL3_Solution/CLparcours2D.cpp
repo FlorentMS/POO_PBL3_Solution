@@ -1,21 +1,14 @@
 #include "CLparcours2D.h"
 
-void CLparcours2D::ajouterPoint(CLpoint3D* pPoint)
-{
-#ifdef affichage
-	std::cout << "ajouterPoint(CLpoint3D* pPoint) vide" << std::endl;
-#endif
-}
-
 CLparcours2D::CLparcours2D()
 {
-	CLparcours2D(10);
+	CLparcours2D::CLparcours2D(10);
 }
 
 CLparcours2D::CLparcours2D(int nbPoint)
 {	
-	tab = new CLpoint*[nbPoint+1];
-	for (int i=0; i <= nbPoint; i++) {
+	tab = new CLpoint * [nbPoint + 1];
+	for (int i = 0; i <= nbPoint; i++) {
 		*(tab + i) = NULL;
 	}
 }
@@ -49,20 +42,3 @@ void CLparcours2D::message(void)
 	CLparcours::message();
 	std::cout << "2D" << std::endl;
 }
-
-void CLparcours2D::ajouterPoint(CLpoint* pPoint)
-{
-	#ifdef affichage
-	std::cout << "ajouterPoint(CLpoint* pPoint)" << std::endl;
-	#endif
-
-	int i = 0;
-	while (*(tab + (i)) != NULL) {
-		i++;
-	}
-	*(tab + (i)) = pPoint;
-#ifdef affichage
-	(*(tab + (i)))->afficherCoordo();
-#endif
-}
-
