@@ -9,6 +9,7 @@ class CLpoint3D :
 {
 protected:
     float z;
+
 public :
     CLpoint3D();
     CLpoint3D(float x, float y, float z);

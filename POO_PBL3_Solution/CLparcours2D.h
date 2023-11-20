@@ -12,6 +12,7 @@ class CLparcours2D :
 {
 private :
     CLpoint* *tab;
+    void ajouterPoint(CLpoint3D*);
 
 public :
     CLparcours2D();
@@ -20,7 +21,7 @@ public :
 
     float calculDistance(void) override;
     void message(void) override;
-    void ajouterPoint(CLpoint*);
+    void ajouterPoint(CLpoint* pPoint) override;
 };
 
 #endif
