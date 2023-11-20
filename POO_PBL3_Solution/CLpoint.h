@@ -16,6 +16,7 @@ public :
 
 	float getX(void);
 	float getY(void);
+	virtual float getZ(void);
 
 	virtual void afficherCoordo();
 };

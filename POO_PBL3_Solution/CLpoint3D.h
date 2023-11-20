@@ -13,8 +13,8 @@ public :
     CLpoint3D();
     CLpoint3D(float x, float y, float z);
 
-    float getZ(void);
-    void afficherCoordo();
+    float getZ(void) override;
+    void afficherCoordo() override;
 };
 
 #endif // !ClassePoint3D

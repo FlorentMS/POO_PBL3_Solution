@@ -18,8 +18,8 @@ public :
     CLparcours2D(int nbPoint);
     ~CLparcours2D();
 
-    float calculDistance(void);
-    void message(void);
+    float calculDistance(void) override;
+    void message(void) override;
     void ajouterPoint(CLpoint*);
 };
 

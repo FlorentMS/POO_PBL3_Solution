@@ -20,6 +20,12 @@ float CLpoint::getY(void)
 	return this->y;
 }
 
+float CLpoint::getZ(void)
+{	
+	std::cerr << "Un point 2D n'a pas de troisième dimension";
+	return 0.0f;
+}
+
 void CLpoint::afficherCoordo()
 {
 	std::cout << "Les coordonnees du point : " << this

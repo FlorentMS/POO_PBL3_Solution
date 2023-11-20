@@ -1,5 +1,6 @@
 #pragma once
 #include "CLpoint.h"
+#include "CLpoint3D.h"
 
 #ifndef ClasseParcours
 #define ClasseParcours
@@ -12,7 +13,7 @@ protected :
 public :
 	virtual float calculDistance(void) = 0;
 	virtual void message(void);
-	virtual void ajouterPoint(CLpoint*) = 0;
+	virtual void ajouterPoint(CLpoint*);
 };
 
 #endif // 

@@ -32,9 +32,8 @@ void main(void) {
 	p1 = new CLpoint3D(0.0, 0.0, 0.0);
 	p2 = new CLpoint3D(1.0, 1.0, 1.0);
 	p3 = new CLpoint3D(2.0, 2.0, 2.0);
-	cout << p1->getX()<< endl;
-	p3->afficherCoordo();
-	/*parcours = new CLparcours3D(3);
+	parcours = new CLparcours3D(3);
+	cout << p3->getZ() << endl;
 
 	parcours->ajouterPoint(p1);
 	parcours->ajouterPoint(p2);
@@ -47,6 +46,6 @@ void main(void) {
 	p2 = new CLpoint3D(1.0, 1.0, 1.0);
 
 	(p1 = p2)->afficherCoordo();
-	*/
+	
 	cin/*.get()*/  >> pause;
 }
